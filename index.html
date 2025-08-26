@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literary Lens | Blog Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-book-open"></i>
+                Narrative Nook
+            </a>
+            
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <div class="search-form">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Featured Post Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>The Future of Digital Reading</h1>
+                <p>Explore how technology is transforming our reading habits and the way we consume literature in the digital age.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="hero-image">
+                <img src="heropic.webp" alt="Featured Post Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <div class="container main-content">
+        <!-- Blog Posts Section -->
+        <main>
+            <h2 class="section-title" id="posts">Latest Articles</h2>
+            
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="technology">Technology</button>
+                <button class="filter-btn" data-filter="reviews">Book Reviews</button>
+                <button class="filter-btn" data-filter="writing">Writing Tips</button>
+                <button class="filter-btn" data-filter="industry">Industry News</button>
+            </div>
+            
+            <!-- Posts Grid -->
+            <div class="posts-grid">
+                <!-- Post 1 -->
+                <article class="post-card" data-category="technology">
+                    <div class="post-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Post Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">How E-readers Changed Reading Habits</h3>
+                        <p class="post-excerpt">Exploring the impact of digital devices on how we consume literature and the future of reading.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar"></i> June 15, 2023</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Post 2 -->
+                <article class="post-card" data-category="reviews">
+                    <div class="post-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Post Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">The Top 10 Must-Read Books of 2023</h3>
+                        <p class="post-excerpt">Our curated list of the most impactful and engaging books released this year across various genres.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar"></i> June 10, 2023</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Post 3 -->
+                <article class="post-card" data-category="writing">
+                    <div class="post-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Post Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">7 Tips for Overcoming Writer's Block</h3>
+                        <p class="post-excerpt">Practical strategies to help writers break through creative barriers and regain their inspiration.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar"></i> June 5, 2023</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Post 4 -->
+                <article class="post-card" data-category="industry">
+                    <div class="post-thumbnail">
+                        <img src="p1.jpeg" alt="Post Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">The Rise of Independent Publishing</h3>
+                        <p class="post-excerpt">How self-publishing platforms are transforming the literary landscape and empowering authors.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar"></i> May 28, 2023</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Post 5 -->
+                <article class="post-card" data-category="technology">
+                    <div class="post-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Post Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">AI and the Future of Storytelling</h3>
+                        <p class="post-excerpt">Examining how artificial intelligence is being used to create and enhance narrative experiences.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar"></i> May 22, 2023</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Post 6 -->
+                <article class="post-card" data-category="reviews">
+                    <div class="post-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1530825894095-9c184b068fcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Post Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">Classic Literature: Why It Still Matters</h3>
+                        <p class="post-excerpt">A look at why centuries-old books continue to resonate with modern readers and their relevance today.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar"></i> May 15, 2023</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sticky-sidebar">
+                <!-- Categories Widget -->
+                <div class="sidebar-widget" id="categories">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul class="categories-list">
+                        <li><a href="#">Technology <span>(12)</span></a></li>
+                        <li><a href="#">Book Reviews <span>(24)</span></a></li>
+                        <li><a href="#">Writing Tips <span>(18)</span></a></li>
+                        <li><a href="#">Industry News <span>(15)</span></a></li>
+                        <li><a href="#">Author Interviews <span>(9)</span></a></li>
+                        <li><a href="#">Literary Events <span>(7)</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Recent Posts Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Recent Posts</h3>
+                    <div class="recent-posts">
+                        <div class="recent-post">
+                            <div class="recent-post-thumb">
+                                <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Recent Post">
+                            </div>
+                            <div class="recent-post-content">
+                                <h4>How E-readers Changed Reading Habits</h4>
+                                <span class="recent-post-date">June 15, 2023</span>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-post">
+                            <div class="recent-post-thumb">
+                                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Recent Post">
+                            </div>
+                            <div class="recent-post-content">
+                                <h4>The Top 10 Must-Read Books of 2023</h4>
+                                <span class="recent-post-date">June 10, 2023</span>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-post">
+                            <div class="recent-post-thumb">
+                                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Recent Post">
+                            </div>
+                            <div class="recent-post-content">
+                                <h4>7 Tips for Overcoming Writer's Block</h4>
+                                <span class="recent-post-date">June 5, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Search</h3>
+                    <div class="sidebar-search">
+                        <input type="text" placeholder="Search...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Social Links Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Literary Lens</h3>
+                    <p>Literary Lens is a blog dedicated to exploring the world of literature, technology, and the intersection between them.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and articles.</p>
+                    <div class="sidebar-search">
+                        <input type="email" placeholder="Your email address">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Literary Lens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
